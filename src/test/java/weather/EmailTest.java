@@ -1,7 +1,11 @@
 package weather;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 public class EmailTest {
+
     @Test
     public void testGeneratesAlertString() {
         Email email = new Email();

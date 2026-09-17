@@ -1,7 +1,11 @@
 package house;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 public class PenthouseSuiteTest {
+
     @Test
     public void testInitializedWithFourBedrooms() {
         PenthouseSuite penthouse = new PenthouseSuite();

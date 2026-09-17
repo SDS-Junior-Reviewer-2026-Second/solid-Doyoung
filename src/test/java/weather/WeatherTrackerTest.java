@@ -1,13 +1,16 @@
 package weather;
 
-import weather.WeatherTracker;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
+import org.junit.jupiter.api.Test;
+import weather.WeatherTracker;
 
 public class WeatherTrackerTest {
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
+    private final ByteArrayOutputStream outContent =
+        new ByteArrayOutputStream();
 
     @Test
     public void testReturnsCurrentWeather() {

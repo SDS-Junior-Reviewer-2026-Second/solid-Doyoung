@@ -1,9 +1,12 @@
 package birds;
 
-import birds.Eagle;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import birds.Eagle;
+import org.junit.jupiter.api.Test;
 
 public class EagleTest {
+
     @Test
     public void testItFliesInTheAir() {
         Eagle eagle = new Eagle(5);

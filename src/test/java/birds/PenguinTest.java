@@ -1,15 +1,18 @@
 package birds;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import birds.Penguin;
+import org.junit.jupiter.api.Test;
 
 public class PenguinTest {
+
     @Test
     public void testItLosesFeathers() {
         Penguin penguin = new Penguin(5);
         penguin.molt();
         assertEquals(4, penguin.numberOfFeathers);
     }
-
 
     @Test
     public void testItCanSwim() {
