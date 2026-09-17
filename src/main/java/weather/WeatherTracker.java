@@ -1,23 +1,28 @@
 package weather;
 
 public class WeatherTracker {
+
     String currentConditions;
-    Phone phone;
-    Email email;
+    WeatherNotifier rainyDayNotifier;
+    WeatherNotifier sunnyDayNotifier;
 
     public WeatherTracker() {
-        phone = new Phone();
-        email = new Email();
+        rainyDayNotifier = new Phone();
+        sunnyDayNotifier = new Email();
     }
 
     public void setCurrentConditions(String weatherDescription) {
         this.currentConditions = weatherDescription;
         if (weatherDescription == "rainy") {
-            String alert = phone.generateWeatherAlert(weatherDescription);
+            String alert = rainyDayNotifier.generateWeatherAlert(
+                weatherDescription
+            );
             System.out.print(alert);
         }
         if (weatherDescription == "sunny") {
-            String alert = email.generateWeatherAlert(weatherDescription);
+            String alert = sunnyDayNotifier.generateWeatherAlert(
+                weatherDescription
+            );
             System.out.print(alert);
         }
     }
