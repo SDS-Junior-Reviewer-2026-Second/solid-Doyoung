@@ -1,7 +1,14 @@
 package birds;
 
-public interface Bird {
-    public void fly();
+public class Bird {
 
-    public void molt();
+    int numberOfFeathers;
+
+    public Bird(int initialFeatherCount) {
+        this.numberOfFeathers = initialFeatherCount;
+    }
+
+    public void molt() {
+        numberOfFeathers--;
+    }
 }

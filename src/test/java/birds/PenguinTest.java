@@ -2,7 +2,6 @@ package birds;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import birds.Penguin;
 import org.junit.jupiter.api.Test;
 
 public class PenguinTest {

@@ -1,18 +1,14 @@
 package birds;
 
-public class Eagle implements Bird {
+public class Eagle extends Bird implements Flyable {
+
     String currentLocation;
-    int numberOfFeathers;
 
     public Eagle(int initialFeatherCount) {
-        this.numberOfFeathers = initialFeatherCount;
+        super(initialFeatherCount);
     }
 
     public void fly() {
         this.currentLocation = "in the air";
-    }
-
-    public void molt() {
-        this.numberOfFeathers -= 1;
     }
 }
