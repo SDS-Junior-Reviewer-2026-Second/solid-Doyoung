@@ -1,6 +1,7 @@
 package house;
 
 public class Studio extends Apartment {
+
     public Studio() {
         this.numberOfBedrooms = 0;
     }
