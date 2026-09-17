@@ -2,7 +2,7 @@ package greeter;
 
 public class Greeter {
 
-    Formality formality;
+    private Formality formality = new Formality();
 
     public String greet() {
         return formality.getGreeting();
